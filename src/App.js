@@ -28,7 +28,7 @@ function App() {
 
     materialTwo.matcap = matcapTextureTwo;
     materialTwo.needsUpdate = true;
-  }, []);
+  }, [matcapTexture, matcapTextureTwo]);
 
   useFrame((state, delta) => {
     for (const donut of donutGroup.current.children) {
